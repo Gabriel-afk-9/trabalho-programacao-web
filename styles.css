@@ -95,4 +95,46 @@ h1 {
     text-align: left;
  }
 
+.Themes .items-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 4fr));
+  gap: 1rem;
+}
+
+.Themes span {
+    color: var(--primary-color);
+}
+
+.Themes h2{
+  color: rgb(0, 0, 0);
+  font-size: 2.7rem;
+  margin-bottom: 2rem;
+}
+
+.Themes .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border-top: var(--primary-color) solid;
+  border-radius: 1.5rem;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  background-color: rgb(255, 255, 255);
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.Themes .item:hover {
+    transform: translateY(-5px) scale(1.05);
+}
+
+.Themes .item img {
+  width: 18em; 
+  height: auto; 
+  border-radius: 7px;
+  margin-bottom: 1rem;
+}
 
