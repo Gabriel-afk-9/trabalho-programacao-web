@@ -5,15 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feira de Ciências e Inovação</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="img/logo.jpeg">
+    
 </head>
 
 <body>
     <header class="header">
-        <h1>Feira de Ciências e inovação</h1>
         <section>
-            <a href="#" class="logo">
-                <img src="img/logo.jpeg" alt="logo" width="90px" height="90px">
-            </a>
+            <div class="logo-title">
+                <a href="#" class="logo">
+                    <img src="img/logo.jpeg" alt="logo" width="90px" height="90px">
+                </a>
+                <h1>Feira de Ciências<br />e inovação</h1>
+            </div>
+
             <nav class="navbar">
                 <a href="#Apresentation">Apresentação</a>
                 <a href="#Themes">Eixos Tematicos</a>
@@ -22,58 +27,66 @@
             </nav>
         </section>
     </header>
+    
 
     <main>
-        <section class="Apresentation">
+        <section class="Apresentation" id="Apresentation">
+
+            <div class="p-container">
+                <h1>Apresentação</h1>
+                <br />
+                <p>A Feira de Ciências e Inovação da UESPI é um evento anual que reúne estudantes, professores e pesquisadores de diversas áreas do conhecimento para compartilhar experiências, projetos e descobertas científicas. O objetivo principal é incentivar a criatividade, o pensamento crítico e a busca por soluções inovadoras para os desafios da sociedade contemporânea.</p>
+                <br />
+
+                <p>Durante a feira, os participantes têm a oportunidade de apresentar seus trabalhos, trocar ideias e interagir com especialistas renomados, promovendo um ambiente de aprendizado colaborativo e multidisciplinar. Além das exposições de projetos, a programação inclui palestras, oficinas e mesas-redondas sobre temas atuais da ciência, tecnologia e inovação.</p>
+                <br />
+                
+                <p>A UESPI acredita que eventos como este são fundamentais para estimular o interesse pela pesquisa e fortalecer a integração entre universidade e comunidade. A Feira de Ciências e Inovação é, portanto, um espaço aberto à criatividade, ao diálogo e à construção coletiva do conhecimento, contribuindo para o desenvolvimento científico e social do Piauí e do Brasil.</p>
+                <br />
+            </div>
                         
-            <p>A Feira de Ciências e Inovação da UESPI é um evento anual que reúne estudantes, professores e pesquisadores de diversas áreas do conhecimento para compartilhar experiências, projetos e descobertas científicas. O objetivo principal é incentivar a criatividade, o pensamento crítico e a busca por soluções inovadoras para os desafios da sociedade contemporânea.</p>
-
-            <p>Durante a feira, os participantes têm a oportunidade de apresentar seus trabalhos, trocar ideias e interagir com especialistas renomados, promovendo um ambiente de aprendizado colaborativo e multidisciplinar. Além das exposições de projetos, a programação inclui palestras, oficinas e mesas-redondas sobre temas atuais da ciência, tecnologia e inovação.</p>
-
-            <p>A UESPI acredita que eventos como este são fundamentais para estimular o interesse pela pesquisa e fortalecer a integração entre universidade e comunidade. A Feira de Ciências e Inovação é, portanto, um espaço aberto à criatividade, ao diálogo e à construção coletiva do conhecimento, contribuindo para o desenvolvimento científico e social do Piauí e do Brasil.</p>
-
             <figure>
-                <img src="https://tse4.mm.bing.net/th/id/OIP.iTJ1yRefwdbm-L6vlYM_SwHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Universidade Estadual do Piauí" width="400px" height="300px">
+                <img class="uespi-img" src="https://tse4.mm.bing.net/th/id/OIP.iTJ1yRefwdbm-L6vlYM_SwHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Universidade Estadual do Piauí" width="400px" height="300px">
                 <figcaption>Universidade Estadual do Piauí.</figcaption>
             </figure>
         </section>
 
-        <section class="Themes">
-            <h2>Eixos Temáticos</h2>
+        <section class="Themes" id="Themes">
+            <h2>Eixos <span>Tématicos</span></h2>
 
             <div class="items-container">
                 <div class="item">
-                    <img src="" alt="">
+                    <img src="./img/exatas.png" alt="">
                     <h3>Ciências Exatas e Tecnológicas</h3>
                     <p></p>
                 </div>
                 <div class="item">
-                    <img src="" alt="">
+                    <img src="./img/biológicas.png" alt="">
                     <h3>Ciências Biológicas e da Saúde</h3>
                     <p></p>
                 </div>
                 <div class="item">
-                    <img src="" alt="">
+                    <img src="./img/humanas.png" alt="">
                     <h3>Ciências Humanas e Sociais Aplicadas</h3>
                     <p></p>
                 </div>
                 <div class="item">
-                    <img src="" alt="">
+                    <img src="./img/engenharia.png" alt="">
                     <h3>Engenharia e Inovação Tecnológica</h3>
                     <p></p>
                 </div>
                 <div class="item">
-                    <img src="" alt="">
+                    <img src="img/meio-ambiente.png" alt="">
                     <h3>Meio Ambiente e Sustentabilidade</h3>
                     <p></p>
                 </div>
                 <div class="item">
-                    <img src="" alt="">
+                    <img src="./img/educação.png" alt="">
                     <h3>Educação e Inclusão Social</h3>
                     <p></p>
                 </div>
                 <div class="item">
-                    <img src="" alt="">
+                    <img src="./img/tecnologia.png" alt="">
                     <h3>Tecnologias da Informação e Comunicação</h3>
                     <p></p>
                 </div>
@@ -85,7 +98,7 @@
             </div>
         </section>
 
-        <section class="Projects">
+        <section class="Projects" id="Projects">
             <h2>Projetos em Destaque</h2>
             
             <div class="projects-container">
@@ -151,7 +164,7 @@
         </section>
 
 
-        <section class="SignUp">
+        <section class="SignUp" id="SignUp">
             <forms>
                 <label for="name_project">Nome do Projeto</label>
                     <input type="text" id="name_project">
@@ -183,17 +196,16 @@
         </section>
 
         <section  class="social-media">
-            <a href="#"><img src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000" alt="Facebook" width="40px" height="40px"></a>
-            <a href="#"><img src="https://th.bing.com/th/id/OIP.XuEDpuX1ZDYte85NmJwugAHaHa?w=167&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Instagram" width="30px" height="30px"></a>
-            <a href="#"><img src="https://img.icons8.com/?size=100&id=phOKFKYpe00C&format=png&color=000000" alt="Twitter" width="30px" height="30px"></a>
-            <a href="#"><img src="https://img.icons8.com/?size=100&id=13930&format=png&color=000000" alt="LinkedIn" width="30px" height="30px"></a>        
+            <a href="#"><img width="50" height="50" src="https://img.icons8.com/ios/50/EBEBEB/instagram-new--v1.png" alt="instagram-new--v1"/></a>
+            <a href="#"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/EBEBEB/facebook-new.png" alt="facebook-new"/></a>
+            <a href="#"><img width="50" height="50" src="https://img.icons8.com/ios/50/EBEBEB/twitterx--v2.png" alt="twitterx--v2"/></a>
+            
         </section>
-        
         <section class="developers">
             <p>Samuel da Penha Nascimento</p>
             <p>Gabriel Lima Silva Oliveira</p>
             <p>Paulo Henrique Alves Vieira</p>
-        </section>
+        </section> 
     </footer>
 </body>
 </html> 

@@ -1,0 +1,98 @@
+:root {
+  --primary-color: #5252cc;
+  --bg: #ffffff;
+  --secundary: linear-gradient(135deg, #5252cc 60%, #a6ffcb 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.2s linear;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-padding-top: 120px; 
+    scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    background: var(--secundary);
+}
+
+.header section {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  justify-content: space-between;
+}
+
+section {
+  padding: 3rem 2rem;
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+.logo-title {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.logo img {
+    border-radius: 100%;
+}
+
+.uespi-img{
+    width: 600px;
+    height: 500px;
+    margin: 0 1rem;
+    margin-top: 3.5rem;
+}
+
+h1 {
+    font-size: 1rem;
+    text-align: left;
+    color: var(--bg);
+}
+
+.navbar a {    
+    margin: 0 1rem;
+    font-size: 1.1rem;
+    color: var(--bg);
+}
+
+.navbar a:hover {
+    color: var(--bg);
+    border-bottom: 0.1rem solid var(--bg);
+    font-size: 1.2rem;
+}
+
+.Apresentation {
+    display:flex
+}
+
+.p-container h1 {
+    margin-top: -2rem;
+    color: #222;
+    font-size: 3rem;
+}
+
+ .p-container p{
+    font-size: 1.3rem;
+    text-align: left;
+ }
+
+
