@@ -1,6 +1,6 @@
 :root {
   --primary-color: #5252cc;
-  --bg: #ffffff;
+  --bg: #f0f0f0;
   --secundary: linear-gradient(135deg, #5252cc 60%, #a6ffcb 100%);
 }
 
@@ -179,6 +179,7 @@ h1 {
     max-height: 16rem;
     position: relative;
     padding-bottom: 0;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
 }
 
 .project-card:hover {
@@ -247,22 +248,92 @@ input:hover {
 }
 
 footer {
-    background-color: var(--primary-color);
-    width: 100%;
-    height: 7rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    border-top: var(--border);
+  background-color: var(--primary-color);
+  min-height: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 2px solid rgba(0, 0, 0, 0.129);
+  overflow: hidden;
+  padding: 1rem;
+  color: white;
+  flex-grow: 1;
 }
 
-.social-media a:hover {
-    transform: translateY(-0.2rem);
+footer .titles, footer .footer-itens {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: start;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  flex-grow: 1;
 }
 
-.developers {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1rem;
+.titles h4 {
+  font-size: clamp(0.8rem, 2vw, 1.5rem);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.contacts, .social-media, .developers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0.5rem 1rem;
+  box-sizing: border-box;
+}
+
+.contacts {
+  margin: 0;
+}
+
+.contacts .row-1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  overflow: hidden;
+  gap: 1rem;
+}
+
+.contacts .row-2 {
+  white-space: nowrap;
+  text-overflow: hidden;
+}
+
+.row-1 .email {
+  color: white;
+}
+
+.social-media, .developers {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.social-media {
+  transform: translateX(-1rem);
+}
+
+.social-media a img {
+  opacity: 0.8;
+}
+
+.social-media .site-link img {
+  border-radius: 0.5rem;
+}
+
+.social-media a img:hover {
+  transform:translateY(-2px);
+  opacity: 1;
 }
