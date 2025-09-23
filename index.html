@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Feira de Ciências e Inovação</title>
         <link rel="stylesheet" href="styles.css">
-        <link rel="icon" type="image/png" href="img/logo.jpeg">
+        <link rel="icon" type="image/png" href="img/1758576199652.png">
         
     </head>
 
@@ -27,14 +27,13 @@
                 </nav>
             </section>
         </header>
-        
 
         <main>
             <section class="Apresentation" id="Apresentation">
-
-                <div class="p-container">
+                <div class="text-apresentation">
                     <h1>Apresentação</h1>
                     <br />
+
                     <p>A Feira de Ciências e Inovação da UESPI é um evento anual que reúne estudantes, professores e pesquisadores de diversas áreas do conhecimento para compartilhar experiências, projetos e descobertas científicas. O objetivo principal é incentivar a criatividade, o pensamento crítico e a busca por soluções inovadoras para os desafios da sociedade contemporânea.</p>
                     <br />
 
@@ -58,42 +57,42 @@
                     <div class="item">
                         <img src="./img/exatas.png" alt="">
                         <h3>Ciências Exatas e Tecnológicas</h3>
-                        <p></p>
+                        <p>Projetos que utilizam a lógica, a matemática e a computação para desenvolver novas tecnologias, algoritmos e soluções para problemas complexos, desde a física de materiais até a inteligência artificial.</p>
                     </div>
                     <div class="item">
                         <img src="./img/biológicas.png" alt="">
                         <h3>Ciências Biológicas e da Saúde</h3>
-                        <p></p>
+                        <p>Pesquisas focadas na vida em todas as suas formas. Inclui inovações em medicina, biotecnologia, genética, saúde humana e o estudo de ecossistemas para melhorar o bem-estar e a qualidade de vida.</p>
                     </div>
                     <div class="item">
                         <img src="./img/humanas.png" alt="">
                         <h3>Ciências Humanas e Sociais Aplicadas</h3>
-                        <p></p>
+                        <p>Estudos que analisam a sociedade, a cultura, o comportamento humano e suas interações. Busca compreender e propor soluções para desafios sociais, econômicos, políticos e culturais contemporâneos.</p>
                     </div>
                     <div class="item">
                         <img src="./img/engenharia.png" alt="">
                         <h3>Engenharia e Inovação Tecnológica</h3>
-                        <p></p>
+                        <p>Desenvolvimento de soluções práticas e criativas através da aplicação de princípios científicos. Abrange a criação de novas máquinas, sistemas, estruturas e processos para otimizar e inovar na indústria e no cotidiano.</p>
                     </div>
                     <div class="item">
                         <img src="img/meio-ambiente.png" alt="">
                         <h3>Meio Ambiente e Sustentabilidade</h3>
-                        <p></p>
+                        <p>Projetos voltados para a preservação dos recursos naturais e o desenvolvimento de soluções sustentáveis. Inclui temas como energias renováveis, reciclagem, conservação da biodiversidade e combate às mudanças climáticas.</p>
                     </div>
                     <div class="item">
                         <img src="./img/educação.png" alt="">
                         <h3>Educação e Inclusão Social</h3>
-                        <p></p>
+                        <p>Inovações e metodologias para transformar a aprendizagem e promover a inclusão. Engloba o desenvolvimento de novas ferramentas pedagógicas, tecnologias assistivas e estratégias para garantir uma educação acessível e de qualidade para todos.</p>
                     </div>
                     <div class="item">
                         <img src="./img/tecnologia.png" alt="">
                         <h3>Tecnologias da Informação e Comunicação</h3>
-                        <p></p>
+                        <p>Criação e aplicação de soluções digitais que conectam pessoas, dados e sistemas. Foco no desenvolvimento de softwares, aplicativos, redes, segurança da informação e o impacto da internet na sociedade.</p>
                     </div>
                     <div class="item">
                         <img src="./img/Agricultura.png" alt="">
                         <h3>Agricultura e Desenvolvimento Rural</h3>
-                        <p></p>
+                        <p>Tecnologias e práticas para modernizar o campo e fortalecer a produção de alimentos de forma sustentável. Aborda desde a biotecnologia agrícola e automação até a melhoria da qualidade de vida nas comunidades rurais.</p>
                     </div>
                 </div>
             </section>
@@ -102,7 +101,6 @@
                 <h2>Projetos em Destaque</h2>
                 
                 <div class="projects-container">
-
                     <div class="project-card">
                         <h3>Robô Auxiliar para Deficientes Visuais</h3>
                         <p><strong>Equipe:</strong> Visão Futurista</p>
@@ -158,46 +156,48 @@
                         <p><strong>Instituição:</strong> IFPI</p>
                         <p>Painéis solares levam energia limpa a comunidades sem acesso à rede elétrica.</p>
                     </div>
-                    
                 </div>
-
             </section>
 
-
             <section class="SignUp" id="SignUp">
-                <forms>
+                <h2>Inscreva- <span>se</span></h2>
+                <forms class="form-container">
                     <label for="name_project">Nome do Projeto</label>
-                        <input type="text" id="name_project">
+                        <input type="text" id="name_project" placeholder="Ex: Filtro de água de baixo custo">
                     <label for="project_by">Nome do Responsavel</label>
-                        <input type="text" id="project_by">
+                        <input type="text" id="project_by" placeholder="Digite seu nome">
                     <label for="college">Instituição</label>
-                        <input type="text" id="college">
+                        <input type="text" id="college" placeholder="Ex: UESPI, IFPI ...">
                     <label for="thematic-line">Eixo Temático</label>
                         <select id="thematic-line">
-                            <option>Ciências Exatas e Tecnológicas</option>
+                            <option disabled selected>Selecione um eixo temático...</option>
                             <option>Ciências Biológicas e da Saúde</option>
+                            <option>Ciências Exatas e Tecnológicas</option>
                             <option>Ciências Humanas e Sociais Aplicadas</option>
                             <option>Engenharia e Inovação Tecnológica</option>
-                            <option>Meio Ambiente e Sustentabilidade</ooption>
+                            <option>Meio Ambiente e Sustentabilidade</option>
                             <option>Educação e Inclusão Social</option>
                             <option>Tecnologias da Informação e Comunicação</option>
                             <option>Agricultura e Desenvolvimento Rural</option>
                         </select>
-                    <textarea placeholder="Resumo">Resumo</textarea>
-                    <button type="submit">enviar</button>
-                    <button type="reset">limpar</button>
+                    <label for="text-area">Resumo</label>
+                    <textarea class="text-area" placeholder="Resume aqui..."></textarea>
+                    <div class="form-button">
+                        <button type="reset">Limpar</button>
+                        <button type="submit">Enviar</button>
+                    </div>
                 </forms>
             </section>
         </main>
     
         <footer>
             <div class="titles">
-                <h4>Comissão Organizadora</h4>
-                <h4 class="p-center">Redes Sociais</h4>
-                <h4>Autores do Projeto</h4>
+                <h4 class="title-1">Comissão Organizadora</h4>
+                <h4 class="title-2">Redes Sociais</h4>
+                <h4 class="title-3">Autores do Projeto</h4>
             </div>
             
-            <div class="footer-itens">
+            <div class="footer-items">
                 <section class="contacts">
                     <div class="row-1">
                         <p><strong>Email: </strong><a href="#" class="email">feiraciencias@uespi.br</a></p>
